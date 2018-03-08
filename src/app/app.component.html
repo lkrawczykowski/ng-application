@@ -1,0 +1,15 @@
+<mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav mode="side">
+        <mat-nav-list>
+            <a mat-list-item routerLink="." (click)="sidenav.close()">MENU ITEM 1</a>
+            <a mat-list-item routerLink="." (click)="sidenav.close()">MENU ITEM 2</a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
